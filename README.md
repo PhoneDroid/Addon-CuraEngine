@@ -9,6 +9,6 @@ Discussion thread [here](http://forum.freecadweb.org/viewtopic.php?f=22&t=5466)
 ##Installation
 The easiest way to install is to clone into ~/.FreeCAD/Mod
 
-	cd ~/.FreeCAD/Mod
-	git clone https://github.com/cblt2l/FreeCAD-CuraEngine-Plugin.git
+    cd ~/.FreeCAD/Mod
+    git clone https://github.com/cblt2l/FreeCAD-CuraEngine-Plugin.git
 Then restart FreeCAD. An entry for '__3D Printing__' should be available in the Workbench dropdown menu.

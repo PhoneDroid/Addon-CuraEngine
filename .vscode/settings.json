@@ -1,0 +1,6 @@
+{
+    "python.analysis.extraPaths": [
+        "",
+        "https://github.com/FreeCAD/FreeCAD/.pixi/envs/default/lib/python3.11/site-packages"
+    ]
+}
