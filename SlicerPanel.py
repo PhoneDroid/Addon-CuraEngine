@@ -1,28 +1,26 @@
 # SPDX-License-Identifier: LGPL-2.1-or-later
 # SPDX-FileNotice: Part of the CuraEngine addon.
 
-#***************************************************************************
-#*                                                                         *
-#*   Copyright (c) 2014                                                    *
-#*   cblt2l <cblt2l@users.sourceforge.net>                                 *
-#*                                                                         *
-#*   This program is free software; you can redistribute it and/or modify  *
-#*   it under the terms of the GNU Lesser General Public License (LGPL)    *
-#*   as published by the Free Software Foundation; either version 2 of     *
-#*   the License, or (at your option) any later version.                   *
-#*   for detail see the LICENCE text file.                                 *
-#*                                                                         *
-#*   This program is distributed in the hope that it will be useful,       *
-#*   but WITHOUT ANY WARRANTY; without even the implied warranty of        *
-#*   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the         *
-#*   GNU Library General Public License for more details.                  *
-#*                                                                         *
-#*   You should have received a copy of the GNU Library General Public     *
-#*   License along with this program; if not, write to the Free Software   *
-#*   Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  *
-#*   USA                                                                   *
-#*                                                                         *
-#***************************************************************************
+################################################################################
+#                                                                              #
+#   Copyright (c) 2014 cblt2l                                                  #
+#                                                                              #
+#   This library is free software; you can redistribute it and/or modify it    #
+#   under the terms of the GNU Lesser General Public License as published      #
+#   by the Free Software Foundation; either version 2.1 of the License, or     #
+#   (at your option) any later version.                                        #
+#                                                                              #
+#   This library is distributed in the hope that it will be useful,            #
+#   but WITHOUT ANY WARRANTY; without even the implied warranty of             #
+#   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.                       #
+#                                                                              #
+#   See the GNU Lesser General Public License for more details.                #
+#                                                                              #
+#   You should have received a copy of the GNU Lesser General Public License   #
+#   along with this library; if not, write to the Free Software Foundation,    #
+#   Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA           #
+#                                                                              #
+################################################################################
 
 import FreeCAD, Mesh
 import os,sys,string
@@ -53,7 +51,7 @@ class SlicerPanel:
 
 		# Set the Default Values
 		self.Vars = SliceDef()
-		
+
 		# Tab 1
 		self.form.input_1_curapath.setText(self.Vars.readMisc("CuraPath"))
 		self.initMisc(self.form.input_1_NOZDIA, "NozzleDiameter", self._nozzleDiameter)
@@ -287,7 +285,7 @@ class SlicerPanel:
 
 		# Certain parameters need to be scaled up X1000 when passed to CuraEngine
 		scaleDic = dict.fromkeys(["filamentDiameter", "posx", "posy", "initialLayerThickness", "layerThickness", "extrusionWidth", "skirtDistance", "sparseInfillLineDistance",
-								"supportXYDistance", "supportZDistance", "retractionAmount", "retractionAmountExtruderSwitch", "retractionMinimalDistance", 
+								"supportXYDistance", "supportZDistance", "retractionAmount", "retractionAmountExtruderSwitch", "retractionMinimalDistance",
 								"minimalExtrusionBeforeRetraction", "raftMargin", "raftLineSpacing"], 1000)
 
 		# Certain parameters are disabled in GUI and need to be set to zero
